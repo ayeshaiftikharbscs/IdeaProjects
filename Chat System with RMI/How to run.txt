@@ -1,0 +1,22 @@
+
+Command Prompt 1 (rmiregisry)
+cd C:\Users\Ayesha\IdeaProjects\Chat System with RMI\src
+javac *.java
+rmic ChatServer
+rmic ChatClient
+rmiregistry
+
+----------------------------------
+Command Prompt 2 (Run Server)
+
+(Set class path)
+java -cp ".;C:\Users\Ayesha\.IntelliJIdea2017.2\config\jdbc-drivers\MySQL Connector\J\5.1.44\mysql-connector-java-5.1.44-bin.jar" ChatServer
+
+(. means search current directory)
+(agar DB na hoti toh simple java ChatServer command dete compile toh kr lia tha pehle)
+-------------------------------------
+Command Prompt 3 (run Client) 
+
+(Different command prompt for different client)
+
+java ClienGUI
